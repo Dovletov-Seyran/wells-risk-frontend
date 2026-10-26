@@ -1,0 +1,55 @@
+.pointsFilter {
+    padding: 12px 16px 8px;
+}
+
+.pointsFilterLabel {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--wells-muted);
+}
+
+.pointsFilterValue {
+    display: inline-block;
+    min-width: 34px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: var(--wells-accent);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pointsFilterRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.pointsFilterEdge {
+    font-size: 12px;
+    color: var(--wells-muted);
+}
+
+.pointsFilterRange {
+    flex: 1;
+    min-width: 0;
+}
+
+.pointsFilterRange::-webkit-slider-thumb {
+    background: var(--wells-accent);
+}
+
+.pointsFilterRange::-moz-range-thumb {
+    background: var(--wells-accent);
+}
+
+.pointsFilterRange:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 4px rgba(17, 122, 102, 0.25);
+}
+
+.pointsFilterButton {
+    width: 100%;
+    font-weight: 600;
+}

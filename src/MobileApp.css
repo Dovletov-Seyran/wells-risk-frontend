@@ -1,0 +1,49 @@
+:root {
+    /* Цвета с mdcalc.com/calc/362/wells-criteria-dvt, как в лабораторной 1 */
+    --wells-accent: #117A66;
+    --wells-accent-hover: #0D6A58;
+    --wells-surface: #FFFFFF;
+    --wells-background: #F1F4F3;
+    --wells-text: #181D27;
+    --wells-muted: #5F6F6B;
+
+    --criterion-card-radius: 8px;
+    --tabbar-height: 64px;
+}
+
+body {
+    margin: 0;
+    background: #dfe5e3;
+    color: var(--wells-text);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+}
+
+/* Узкая колонка под экран телефона по центру окна */
+.appShell {
+    max-width: 390px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--wells-background);
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Нижний отступ, чтобы таб-панель не перекрывала прокрутку */
+.appContent {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: var(--tabbar-height);
+}
+
+/* Кнопки React-Bootstrap в цветах приложения */
+.btn-primary {
+    --bs-btn-bg: var(--wells-accent);
+    --bs-btn-border-color: var(--wells-accent);
+    --bs-btn-hover-bg: var(--wells-accent-hover);
+    --bs-btn-hover-border-color: var(--wells-accent-hover);
+    --bs-btn-active-bg: var(--wells-accent-hover);
+    --bs-btn-active-border-color: var(--wells-accent-hover);
+    --bs-btn-disabled-bg: var(--wells-accent);
+    --bs-btn-disabled-border-color: var(--wells-accent);
+}

@@ -1,0 +1,131 @@
+/* Один критерий поверх его вертикального видео */
+.feedPage {
+    position: relative;
+    height: calc(100vh - var(--tabbar-height));
+    overflow: hidden;
+    background: #000;
+}
+
+.feedVideo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Затемнение снизу, чтобы читался белый текст */
+.feedShade {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 320px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    pointer-events: none;
+}
+
+/* Правый столбец: поля по теме, лайки и кнопка «Следующий» */
+.feedSide {
+    position: absolute;
+    right: 10px;
+    bottom: 28px;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.feedParam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 64px;
+    color: #fff;
+}
+
+.feedParamValue,
+.feedIcon,
+.feedNext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.feedParamValue {
+    background: var(--wells-accent);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.feedIcon {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.feedIcon svg,
+.feedNext svg {
+    width: 24px;
+    height: 24px;
+}
+
+.feedLabel {
+    font-size: 11px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.feedNext {
+    padding: 0;
+    border: none;
+    background: var(--wells-accent);
+    color: #fff;
+    cursor: pointer;
+}
+
+.feedNext:hover {
+    background: var(--wells-accent-hover);
+}
+
+/* Нижний блок: название и краткое описание */
+.feedBottom {
+    position: absolute;
+    left: 0;
+    right: 84px;
+    bottom: 28px;
+    padding: 0 16px;
+    color: #fff;
+}
+
+.feedName {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.feedDescription {
+    margin: 0 0 6px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.feedMore {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #cfe0f5;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.feedEmpty {
+    padding: 24px 16px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--wells-muted);
+}

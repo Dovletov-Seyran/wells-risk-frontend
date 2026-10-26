@@ -1,0 +1,31 @@
+.tilesHeader {
+    padding: 20px 16px 8px;
+}
+
+.tilesTitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--wells-accent);
+}
+
+.tilesSubtitle {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: var(--wells-muted);
+}
+
+/* Плитка в два столбца */
+.tilesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 12px 16px;
+}
+
+.tilesEmpty {
+    padding: 24px 16px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--wells-muted);
+}
